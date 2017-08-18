@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Gerenciamento de Sessão</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="pagina">
+            <header id="cabecalho">
+                <h1>Licenciamento</h1>
+            </header>
+            <section id="conteudo">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </section>
+            <footer id="rodape">
+                <p>
+                    Licenciamento by ASP.NET(c) <asp:Label ID="anoLabel" runat="server" />
+                </p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
